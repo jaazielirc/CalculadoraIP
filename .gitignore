@@ -15,3 +15,8 @@
 /gradle/settings.gradle
 /gradle/gradlew
 /gradle/gradlew.bat
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+settings.gradle

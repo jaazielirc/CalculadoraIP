@@ -1,0 +1,4 @@
+#Mon Jan 21 00:40:56 CST 2019
+base.0=/home/jaaziel/Documents/Android Projects/CalcIP/app/build/intermediates/transforms/dexMerger/debug/1
+path.0=classes.dex
+renamed.0=classes.dex
