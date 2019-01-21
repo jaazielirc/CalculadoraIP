@@ -34,6 +34,7 @@ public class Resultado extends AppCompatActivity {
 
         return null;
     }
+
     //-----------------------------------------------------------------------------------------
     private String toBinario(int numero){   // convierte de decimal a binario
         String bin = Integer.toBinaryString(numero);
@@ -48,6 +49,7 @@ public class Resultado extends AppCompatActivity {
 
         return bin;
     }
+
     //-----------------------------------------------------------------------------------------
     private int obtenerUnos(String ms){ //obtiene # de unos de una Mascara de subred
         char[] arrMascaraSubred = ms.toCharArray();
@@ -70,6 +72,7 @@ public class Resultado extends AppCompatActivity {
         }
         return numeroDeCeros;
     }
+
     //---------------------------------------------------------------------------------------------
     private String calculaSubredBinario(String ip_propuesta, String m_subred){ //calcula la subred entre la IP y la Mascara de subred
         StringBuilder sb = new StringBuilder();
@@ -85,6 +88,7 @@ public class Resultado extends AppCompatActivity {
         }
         return sb.toString();
     }
+
     //---------------------------------------------------------------------------------------------
     private String calculaSubredDecimal(){
         String subred_binario = calculaSubredBinario(generaIpBinario(), generaMascaraSubredPropuestaBinario(
@@ -100,6 +104,7 @@ public class Resultado extends AppCompatActivity {
 
         return oc1+oc2+oc3+oc4;
     }
+
     //-------------------------------------------------------------------------------------------------
     /*public String[] calculaSubredDecimalArray(){
         String subred_binario = calculaSubredBinario(generaIpBinario(), generaMascaraSubredPropuestaBinario(
@@ -151,6 +156,7 @@ public class Resultado extends AppCompatActivity {
         return oc1+oc2+oc3+oc4;
 
     }
+
     //---------------------------------------------------------------------------------------------------------------
     private String[] splitByNumber(String s) {  //divide subred_binario en 4 partes iguales de 8 bits
         int size = 8;
@@ -161,6 +167,7 @@ public class Resultado extends AppCompatActivity {
             arr[j] = s.substring(i, Math.min(l, i + size));
         return arr;
     }
+
     //-----------------------------------------------------------------------------------------------------------------
     private String generaIpBinario(){  //genera la IP completa (campos ya validados) en binario
         return toBinario(Integer.parseInt(bundle.getString("oc1")))
@@ -168,6 +175,7 @@ public class Resultado extends AppCompatActivity {
                 +toBinario(Integer.parseInt(bundle.getString("oc3")))
                 +toBinario(Integer.parseInt(bundle.getString("oc4")));
     }
+
     //-----------------------------------------------------------------------------------------------------------------
     /*public String generaMascaraSubredOmisionDecimal(String clase){  //genera la máscara de subred correspondiente por omision en decimal
         String mascara_omision = "";
@@ -220,6 +228,7 @@ public class Resultado extends AppCompatActivity {
         String msprop = generaMascaraSubredPropuestaBinario(Integer.parseInt(bundle.getString("ocms")));
         String [] msp = splitByNumber(msprop);
 
+        assert msp != null;
         String msPropuesta = Integer.parseInt(msp[0], 2)+".";
         msPropuesta += Integer.parseInt(msp[1], 2)+".";
         msPropuesta += Integer.parseInt(msp[2], 2)+".";
