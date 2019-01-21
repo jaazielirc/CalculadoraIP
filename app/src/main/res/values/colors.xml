@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="negro">#000</color>
+    <color name="blanco">#FFF</color>
+    <color name="turquesa_palido">#AFEEEE</color>
+    <color name="aguamarina">#7FFFD4</color>
+    <color name="verde_cesped">#7CFC00</color>
+    <color name="verde_amarillo">#9ACD32</color>
+    <color name="orquidea">#DA70D6</color>
+    <color name="purpura">#AB47BC</color>
+</resources>
