@@ -1,1 +1,10 @@
 /build
+.idea/codeStyles/
+.idea/gradle.xml
+.idea/misc.xml
+ idea/runConfigurations.xml
+ gradle.properties
+ gradle/
+ gradlew
+ gradlew.bat
+ settings.gradle
