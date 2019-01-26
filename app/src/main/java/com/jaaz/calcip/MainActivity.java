@@ -138,9 +138,7 @@ public class MainActivity extends AppCompatActivity {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             String ayuda = "Botón C : Limpia el campo de texto seleccionado" +
                     "\nBotón C* : Limpia todos los campos de texto" +
-                    "\nBotón = : Genera el resultado" +
-                    "\nGoma de borrar : Borra el último número del campo de texto" +
-                    "\nBotón ? : Muestra la ayuda";
+                    "\nBotón = : Genera el resultado";
             android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(getActivity());
             builder.setMessage(ayuda).setTitle("Ayuda");
             return builder.create();
