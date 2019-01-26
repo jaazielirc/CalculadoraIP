@@ -699,7 +699,6 @@ id buttonPanel
 id button_c
 id button_call
 id button_equal
-id button_erase
 id button_help
 id center
 id center_horizontal
@@ -739,6 +738,7 @@ id image
 id info
 id invisible
 id italic
+id layout_contenedor_1
 id left
 id line1
 id line3
