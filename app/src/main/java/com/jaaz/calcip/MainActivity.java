@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showError(EditText t1, EditText t2, EditText t3, EditText t4, EditText tms){
         x = 0;
-        Toast.makeText(getApplicationContext(), "ms = "+texto_ms.getText().toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(), "ms = "+texto_ms.getText().toString(), Toast.LENGTH_SHORT).show();
         if( t1.getText().length()==0||t2.getText().length()==0||t3.getText().length()==0
                 ||t4.getText().length()==0||tms.getText().length()==0){
             x = 6;
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                 tms.setError("Error: se crean super redes");
                 tms.setText("");
                 x = 100;
-                Toast.makeText(getApplicationContext(), "X = "+x, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), "X = "+x, Toast.LENGTH_SHORT).show();
             } else {
                 tms.setError(null);
             }
