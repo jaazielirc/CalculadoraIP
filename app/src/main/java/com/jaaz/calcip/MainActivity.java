@@ -23,7 +23,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText texto1, texto2, texto3, texto4, texto_ms;
-    private ImageButton button_equal, button_help, button_erase;
+    private ImageButton button_equal, button_help;
     private Button[] bt = new Button[12];
     private int x = 0;
     @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         texto_ms = findViewById(R.id.texto_ms);
         button_equal = findViewById(R.id.button_equal);
         button_help = findViewById(R.id.button_help);
-        button_erase = findViewById(R.id.button_erase);
+        //button_erase = findViewById(R.id.button_erase);
         bt[11] = findViewById(R.id.button_call);
         bt[10] = findViewById(R.id.button_c);
         bt[9] = findViewById(R.id.n_9);
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void borrarNumero(EditText et1, EditText et2, EditText et3, EditText et4, EditText etms){
+    /*private void borrarNumero(EditText et1, EditText et2, EditText et3, EditText et4, EditText etms){
         if( et1.isFocused() ){
             if( et1.getText().length() > 0 ){
                 et1.getText().delete(et1.getText().length() - 1, et1.getText().length());
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 etms.getText().delete(etms.getText().length() - 1, etms.getText().length());
             }
         }
-    }
+    }*/
 
     private void showHelp(){
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -270,12 +270,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button_erase.setOnClickListener(new View.OnClickListener() {
+        /*button_erase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 borrarNumero(texto1, texto2, texto3, texto4, texto_ms);
             }
-        });
+        });*/
 
         button_help.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -362,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
         @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            String ayuda = "Laura Jessica Fabiola Juárez Esquivel";
+            String ayuda = "Jaaziel";
             android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(getActivity());
             builder.setMessage(ayuda).setTitle("Nombre del alumno");
             return builder.create();
